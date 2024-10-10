@@ -25,8 +25,12 @@ public class StringProblems{
     public String conCat(String s1, String s2){
         int numIndex = 0;
         String concatenatedString = s1 + s2;
+        String currentLetter = concatenatedString.substring(0,1);
+        String nextLetter = concatenatedString.substring(1,2);
         while (length.concatenatedString > numIndex) {
+            if (currentLetter.equals(nextLetter)) {
 
+            }
         }
         return "";
     }
