@@ -8,10 +8,13 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-            //implement code here
+        String ending = x.substring(x.length() - 2)
+        if (ending.equals("ly")) {
+            return true
+        } else {
         return false;
+        }
     }
-
 
     // Given two strings, append them together (known as "concatenation") 
     // and return the result. However, if the concatenation creates a double-char, 
@@ -20,7 +23,11 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        //implement code here
+        int numIndex = 0;
+        String concatenatedString = s1 + s2;
+        while (length.concatenatedString > numIndex) {
+
+        }
         return "";
     }
 
