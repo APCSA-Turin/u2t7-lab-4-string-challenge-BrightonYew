@@ -27,13 +27,23 @@ public class StringProblems{
         String concatenatedString = s1 + s2;
         String currentLetter = concatenatedString.substring(0,1);
         String nextLetter = concatenatedString.substring(1,2);
-        while (length.concatenatedString > numIndex) {
-            if (currentLetter.equals(nextLetter)) {
+        String firstHalf;
+        String secondHalf;
 
+        while (concatenatedString.length() > numIndex) {
+            if (currentLetter.equals(nextLetter)) {
+                firstHalf = concatenatedString(0,numIndex);
+                secondHalf = concatenatedString(numIndex + 1);
+                concatenatedString = firstHalf + secondHalf;
             }
+        numIndex ++;
+        currentLetter = concatenatedString.substring(numIndex + 1, numIndex + 2);
+        nextLetter = concatenatedString.substring(numIndex + 2, numIndex + 3);
         }
-        return "";
+        return concatenatedString;
     }
+
+
 
     // Given a string, return a version without the first 2 chars. 
     // Except keep the first char if it is 'a' and keep the second char if it is 'b'. 
