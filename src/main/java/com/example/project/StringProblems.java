@@ -26,24 +26,14 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        int numIndex = 0;
-        String concatenatedString = s1 + s2;
-        String currentLetter = concatenatedString.substring(0,1);
-        String nextLetter = concatenatedString.substring(1,2);
-        String firstHalf;
-        String secondHalf;
-
-        while (concatenatedString.length() > numIndex) {
-            if (currentLetter.equals(nextLetter)) {
-                firstHalf = concatenatedString(0,numIndex);
-                secondHalf = concatenatedString(numIndex + 1);
-                concatenatedString = firstHalf + secondHalf;
-            }
-        numIndex ++;
-        currentLetter = concatenatedString.substring(numIndex + 1, numIndex + 2);
-        nextLetter = concatenatedString.substring(numIndex + 2, numIndex + 3);
+        String lastLetterof1 = s1.substring(s1.length() - 2,s1.length() - 1);
+        String firstLetterof2 = s2.substring(0,1);
+        String string1 = s1;
+        if (lastLetterof1.equals(firstLetterof2)) {
+            string1 = string1.substring(0,s1.length() - 2);
         }
-        return concatenatedString;
+
+        return string1 + s2;
     } 
 
 
@@ -58,14 +48,14 @@ public class StringProblems{
         String firstCharacter = s1.substring(0,1);
         String secondCharacter = s1.substring(1,2);
         String otherLetters = s1.substring(2);
-        String finalString;
+        String finalString = "";
         if (firstCharacter.equals("a")) {
             finalString += firstCharacter;
         }
         if (secondCharacter.equals("b")) {
             finalString += secondCharacter;
         }
-        return finalString;
+        return finalString + otherLetters;
     } 
 
     
@@ -107,6 +97,7 @@ public class StringProblems{
         if (lastCharacter.equals("b")) {
             return "Buzz";
         }
+        return s1;
     }
 
     // Given an int n, return the string form of the number followed 
