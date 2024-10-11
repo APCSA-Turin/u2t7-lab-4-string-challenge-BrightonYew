@@ -2,6 +2,7 @@ package com.example.project;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class StringProblemsTest{
     @Test
     void testEndsly1(){
@@ -11,6 +12,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testEndsly2(){
         StringProblems o = new StringProblems();
@@ -18,6 +20,7 @@ public class StringProblemsTest{
         boolean studentOutput= o.endsLy("y");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testEndsly3(){
@@ -34,6 +37,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testConcat2(){
         StringProblems o = new StringProblems();
@@ -41,6 +45,7 @@ public class StringProblemsTest{
         String studentOutput= o.conCat("dog","cat");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testConcat3(){
@@ -50,6 +55,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testDefont1(){
         StringProblems o = new StringProblems();
@@ -57,6 +63,7 @@ public class StringProblemsTest{
         String studentOutput= o.deFont("Hello");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testDefont2(){
@@ -66,6 +73,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testDefont3(){
         StringProblems o = new StringProblems();
@@ -73,6 +81,7 @@ public class StringProblemsTest{
         String studentOutput= o.deFont("away");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testDefont4(){
@@ -82,6 +91,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testDefont5(){
         StringProblems o = new StringProblems();
@@ -89,6 +99,7 @@ public class StringProblemsTest{
         String studentOutput= o.deFont("abee");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testDefont6(){
@@ -101,6 +112,10 @@ public class StringProblemsTest{
 
 
 
+
+
+
+
     @Test
     void testWithoutX1(){
         StringProblems o = new StringProblems();
@@ -108,6 +123,7 @@ public class StringProblemsTest{
         String studentOutput= o.withoutX("xHix");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testWithoutX2(){
@@ -117,6 +133,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testWithoutX3(){
         StringProblems o = new StringProblems();
@@ -124,6 +141,7 @@ public class StringProblemsTest{
         String studentOutput= o.withoutX("Hxix");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testfizzString1(){
@@ -133,6 +151,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testfizzString2(){
         StringProblems o = new StringProblems();
@@ -140,6 +159,7 @@ public class StringProblemsTest{
         String studentOutput= o.fizzString("dib");
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testfizzString3(){
@@ -151,6 +171,9 @@ public class StringProblemsTest{
 
 
 
+
+
+
     @Test
     void testfizzString2A(){
         StringProblems o = new StringProblems();
@@ -158,6 +181,7 @@ public class StringProblemsTest{
         String studentOutput= o.fizzString2(1);
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testfizzString2B(){
@@ -167,6 +191,7 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
+
     @Test
     void testfizzString2C(){
         StringProblems o = new StringProblems();
@@ -174,6 +199,7 @@ public class StringProblemsTest{
         String studentOutput= o.fizzString2(3);
         assertEquals(expectedOutput,studentOutput);
     }
+
 
     @Test
     void testfizzString2D(){
@@ -183,7 +209,8 @@ public class StringProblemsTest{
         assertEquals(expectedOutput,studentOutput);
     }
 
-    
+
+   
     @Test
     void testfizzString2E(){
         StringProblems o = new StringProblems();
@@ -191,5 +218,6 @@ public class StringProblemsTest{
         String studentOutput= o.fizzString2(15);
         assertEquals(expectedOutput,studentOutput);
     }
+
 
 }
