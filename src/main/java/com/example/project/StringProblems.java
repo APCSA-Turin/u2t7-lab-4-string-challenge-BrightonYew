@@ -26,11 +26,15 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        String lastLetterof1 = s1.substring(s1.length() - 2,s1.length() - 1);
+        if (s2.isEmpty()) return s1;
+        if (s1.isEmpty()) return s2;
+       
+        String lastLetterof1 = s1.substring(s1.length() - 1);
         String firstLetterof2 = s2.substring(0,1);
         String string1 = s1;
+
         if (lastLetterof1.equals(firstLetterof2)) {
-            string1 = string1.substring(0,s1.length() - 2);
+            string1 = string1.substring(0,s1.length() - 1);
         }
 
         return string1 + s2;
@@ -111,13 +115,13 @@ public class StringProblems{
     // fizzString2(3) → "Fizz!"
     public String fizzString2(int x){
         if (x % 3 == 0 && x % 5 == 0) {
-            return "FizzBuzz";
+            return "FizzBuzz!";
         }
         if (x % 3 == 0) {
-            return "Fizz";
+            return "Fizz!";
         }
         if (x % 5 == 0) {
-            return "Buzz";
+            return "Buzz!";
         }
         return x + "!";
     }
