@@ -25,7 +25,7 @@ public class StringProblems{
     // conCat("abc", "cat") → "abcat"
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
-    /*public String conCat(String s1, String s2){
+    public String conCat(String s1, String s2){
         int numIndex = 0;
         String concatenatedString = s1 + s2;
         String currentLetter = concatenatedString.substring(0,1);
@@ -44,7 +44,7 @@ public class StringProblems{
         nextLetter = concatenatedString.substring(numIndex + 2, numIndex + 3);
         }
         return concatenatedString;
-    } */
+    } 
 
 
 
@@ -54,7 +54,7 @@ public class StringProblems{
     // deFront("Hello") → "llo"
     // deFront("java") → "va"
     // deFront("away") → "aay"
-    /*public String deFont(String s1){
+    public String deFont(String s1){
         String firstCharacter = s1.substring(0,1);
         String secondCharacter = s1.substring(1,2);
         String otherLetters = s1.substring(2);
@@ -66,7 +66,7 @@ public class StringProblems{
             finalString += secondCharacter;
         }
         return finalString;
-    } */
+    } 
 
     
     // Given a string, if the first or last chars are 'x', 
@@ -75,7 +75,7 @@ public class StringProblems{
     // withoutX("xHix") → "Hi"
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
-    /*public String withoutX(String s1){
+    public String withoutX(String s1){
         String firstCharacter = s1.substring(0,1);
         String lastCharacter = s1.substring(s1.length() - 1);
         String finalString = s1;
@@ -86,7 +86,7 @@ public class StringProblems{
             finalString = finalString.substring(0,finalString.length() - 1);
         }
         return finalString;
-    }*/
+    }
 
     // Given a string str, if the string starts with "f" return "Fizz".
     //  If the string ends with "b" return "Buzz". If both the "f" and "b" 
@@ -95,7 +95,7 @@ public class StringProblems{
     // fizzString("fig") → "Fizz"
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
-    /*public String fizzString(String s1){
+    public String fizzString(String s1){
         String firstCharacter = s1.substring(0,1);
         String lastCharacter = s1.substring(s1.length() - 1);
         if (firstCharacter.equals("f") && lastCharacter.equals("b")) {
@@ -107,7 +107,7 @@ public class StringProblems{
         if (lastCharacter.equals("b")) {
             return "Buzz";
         }
-    }*/
+    }
 
     // Given an int n, return the string form of the number followed 
     // by "!". So the int 6 yields "6!". Except if the number is 
@@ -118,7 +118,7 @@ public class StringProblems{
     // fizzString2(1) → "1!"
     // fizzString2(2) → "2!"
     // fizzString2(3) → "Fizz!"
-    /*public String fizzString2(int x){
+    public String fizzString2(int x){
         if (x % 3 == 0 && x % 5 == 0) {
             return "FizzBuzz";
         }
@@ -130,5 +130,4 @@ public class StringProblems{
         }
         return x + "!";
     }
-}*/
 }
